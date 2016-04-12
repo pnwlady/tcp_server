@@ -1,0 +1,26 @@
+{
+  "name": "heidilaursen",
+  "version": "1.0.0",
+  "description": "tcp server with basic time stamped logging",
+  "main": "tcp_server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnwlady/tcp_server.git"
+  },
+  "author": "heidi laursen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnwlady/tcp_server/issues"
+  },
+  "homepage": "https://github.com/pnwlady/tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
