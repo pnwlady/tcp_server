@@ -1,21 +1,27 @@
 'use strict'
 
 const fs = require('fs');
+const myFile = require('/files/*.txt');
 const server = require('./../server').server;
 const mocha = require('mocha');
-const chai = require('chai');
+const expect = require('chai').expect;
 
-var testFile;
+// //
+// fs.readDir = returns array of files
+// get length. check length
+// check toUpperCase
+// pop off of array and check dat
+
+var testFile = (__dirname + '/files/');
 var testChunk;
 
-describe('Should write file with date now info', () => {
-  before(() => {
-    // testFile = new Date.now();
-      expect.fs.writeFile(__dirname + '/files/' + Date.now() + '.txt', 'This text file was made on ' + Date() + '\n' + chunk);
+describe('Should write to file with certain keywords', () => {
+  it('should have GET and Host keywords', () => {
+    expect(testFile).to.have.any.keys('GET', 'Host');
   });
 });
 
-it('should create file with chunk data piped in', () => {
-  expect.chunk = chunk.toString().toUpperCase();
-  process.stdout.write(chunk);
+describe('Server: 3000', () => {
+  it('Should connect to local server: 3000', () => {
+    expect(server.listen().to.eql(3000));
 });
