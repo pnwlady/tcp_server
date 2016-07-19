@@ -1,10 +1,24 @@
-#Simple TCP Server
+## Simple TCP Server
+TCP server that logs requests and saves them to a file identified by date of creation.
 
-##Description
-Create a simple tcp logging server. This server should receive tcp requests and save the request into a file. Each request should be saved into it's own file and you'll have to find something unique to name them. You can use a UUID library or the current time or any other means of having unique strings that you can think of.
+## How to Use
+Start server by typing in command line:
+```node start```
+or
+```node server```
+You will know the server is running when you see: ```server is up on port 8080```
+
+## How to Test
 
 
-##Rubric
+## Dev Dependencies
+  * Chai
+  * Mocha
+  * Gulp
+  * Gulp-eslint
+  * Gulp-mocha
+
+## Rubric
 unique name: 4pts
 logging into file: 4pts
 testing: 2pts

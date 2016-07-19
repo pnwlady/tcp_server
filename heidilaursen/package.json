@@ -2,7 +2,7 @@
   "name": "heidilaursen",
   "version": "1.0.0",
   "description": "tcp server with basic time stamped logging",
-  "main": "server.js",
+  "start": "server.js",
   "directories": {
     "test": "test"
   },
